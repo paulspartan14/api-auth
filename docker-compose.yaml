@@ -11,6 +11,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${USER_DB}
       MONGO_INITDB_ROOT_PASSWORD: ${PASSWORD_DB}
+      MONGO_INITDB_DATABASE: ${COLECTION_DB}
     volumes: 
       - ./mongodata:/data/db
 
@@ -24,3 +25,6 @@ services:
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: ${USER_DB}
       ME_CONFIG_MONGODB_ADMINPASSWORD: ${PASSWORD_DB}
+      ME_CONFIG_MONGODB_AUTH_DATABASE: ${COLECTION_DB}
+    depends_on: 
+      - mongo

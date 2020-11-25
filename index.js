@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({ extended : false }));
 app.use(bodyParser.json());
 
 // pull database
-const url = `${process.env.URI_DB}`
-const option = {useNewUrlParser: true, useUnifiedTopology: true }
+const url = `${process.env.MONGODB_URI_DOCKER}`
+const option = { useNewUrlParser: true, useUnifiedTopology: true }
 mongoose.connect(url, option)
 .then(() => console.log('successfully connected to the database'))
 .catch(err => console.log('error connecting to the database:', err))
