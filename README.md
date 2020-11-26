@@ -1,5 +1,12 @@
 ### api de auth login + protected routes
 
+## iniciar server con:
+ `npm run dev`
+
+ `npm start`
+
+
+
 POST
 http://localhost:3004/api/v1/user/register/
 {
