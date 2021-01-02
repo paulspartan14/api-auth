@@ -24,7 +24,3 @@ GET
 http://localhost:3004/api/v1/admin
 
 Header: {"auth-token":"TOKEN"}
-
-#### build docker image:
-
-`docker build -t "apptest:1.0" .`
