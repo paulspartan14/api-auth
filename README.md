@@ -5,8 +5,6 @@
 
  `npm start`
 
-
-
 POST
 http://localhost:3004/api/v1/user/register/
 {
@@ -26,5 +24,3 @@ GET
 http://localhost:3004/api/v1/admin
 
 Header: {"auth-token":"TOKEN"}
-
-`revisar conexion a db con docker-compose (actualmente se usa mongo-atlas)`
